@@ -1,0 +1,28 @@
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo-dash {
+    background: #008559;
+}
+
+li {
+    list-style: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 4.5px;
+    background: #008559;
+    margin: 5px 0;
+}
+
+
+
+
+/*Login*/
+.login {
+    display: none;
+}
+
