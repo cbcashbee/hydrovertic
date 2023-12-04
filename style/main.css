@@ -1,28 +1,63 @@
-header {
-    display: flex;
-    justify-content: space-between;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-#logo-dash {
-    background: #008559;
-}
 
+/*Typografi*/
 li {
     list-style: none;
 }
 
-.burger div {
-    width: 25px;
-    height: 4.5px;
+
+/*Navigationsbar*/
+header {
+    width: 100vw;
+    height: 57px;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
     background: #008559;
-    margin: 5px 0;
 }
 
+nav {
+    display: flex;
+    flex-grow: 2;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
 
+#logo-nav {
+    width: 137px;
+    height: 35px;
+}
 
+nav li {
+    display: none;
+}
+
+.burger div {
+    width: 30px;
+    height: 3px;
+    background: #FFF;
+    margin: 10px 0;
+}
+
+.ikon {
+    width: 35px;
+    height: 35px;
+}
 
 /*Login*/
 .login {
     display: none;
 }
 
+
+@media screen and (min-width: 400px) {
+    
+    body {
+        background: aqua;
+    }
+}
