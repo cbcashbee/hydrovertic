@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="../style/main.css">
+    <script src="../scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <!--Home link-->
+        <a>
+            <img src="../images/ikon-plant.png" alt="Hydrovertic logo plante">
+        </a>
+
+        <nav>
+            <!--Logo-->
+            <img id="logo-nav" src="../images/logo-hvid.png" alt="Hydrovertic logo tekst">
+
+            <!--Notification-->
+            <img class="ikon" src="../images/ikon-noti.png" alt="notification icon">
+
+            <!--Burger-->
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <li>
+                <ul>Dashboard</ul>
+                <ul>Datalogger</ul>
+                <ul>Indstillinger</ul>
+                <ul>Kontakt</ul>
+            </li>
+        </nav>
+    </header>
+    <!--slideshow-graf-->
+    <div class="graf-container">
+      <!--Graferne/billederne-->
+      <div class="graferne">
+        <img src="../images/grafbar.png" style="width:100%">
+        <div class="tekst">Søjle</div>
+      </div>
+      <div class="graferne">
+        <img src="../images/graflinje.png" style="width:100%">
+        <div class="tekst">Linje</div>
+      </div>
+      <div class="graferne">
+        <img src="../images/grafomrade.png" style="width:100%">
+        <div class="tekst">Område</div>
+      </div>
+      <!--frem og tilbage knapperne-->
+      <a class="tilbage">&#10094;</a>
+      <a class="frem">&#10095;</a>
+    </div>
+    <br>
+   <!--prikkerne-->
+    <div style="text-align: center">
+        <span class="prik" onclick="currentSlide(1)"></span>
+        <span class="prik" onclick="currentSlide(2)"></span>
+        <span class="prik" onclick="currentSlide(3)"></span>
+    </div> 
+</body>
+</html>
