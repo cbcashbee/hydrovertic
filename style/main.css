@@ -5,19 +5,23 @@
 
 
 /*Typografi*/
+@font-face {
+    font-family: OrgonMedium;
+    src: url(../fonts/Orgon-Medium.otf);
+}
+
 li {
     list-style: none;
 }
 
-
 /*Navigationsbar*/
 header {
+    background: #008559;
     width: 100vw;
     height: 57px;
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
-    background: #008559;
 }
 
 nav {
@@ -38,9 +42,9 @@ nav li {
 }
 
 .burger div {
+    background: #FFF;
     width: 30px;
     height: 3px;
-    background: #FFF;
     margin: 10px 0;
 }
 
@@ -49,11 +53,85 @@ nav li {
     height: 35px;
 }
 
-/*Login*/
-.login {
-    display: none;
+#login {
+    background: #FFF;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+#login-logo {
+    width: 360px;
+    height: 110px;
+    padding: 65px 0;
+}
+
+.login-container {
+    background: #D7EAD9;
+    width: 327px;
+    height: 506px;
+    border-radius: 29px;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.login-container div {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container input {
+    width: 285px;
+    height: 57px;
+    margin-top: 50px;
+    border: 3px solid #008559;
+}
+
+.login-container input , .login-container input::placeholder {
+    font-family: OrgonMedium;
+    font-size: 25px;
+    padding: 0 5px;
+}
+
+.login-container p {
+    font-family: OrgonMedium;
+    font-size: 20px;
+    color: #707070;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.login-container button {
+    background: #008559;
+    width: 191px;
+    height: 72px;
+    margin: 50px;
+    border: 4px #FFF solid;
+    border-radius: 10px;
+    font-family: OrgonMedium;
+    font-size: 30px;
+    color: #FFF;
+}
+
+#fejlbesked {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 685px;
+    width: 200px;
+    height: auto;
+    font-family: OrgonMedium;
+    font-size: 20px;
+    text-align: center;
+    color: #ff0000;
+}
 
 @media screen and (min-width: 400px) {
     
