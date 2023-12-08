@@ -71,8 +71,6 @@ nav li {
     height: 73px;
 }
 
-
-/*Dashboard*/
 .hub {
     background: #D7EAD9;
     width: 335px;
@@ -97,6 +95,8 @@ nav li {
     font-size: 40px;
     color: #FFF;
 }
+
+/*Dashboard*/
 
 
 /*JAVASCRIPT*/
@@ -181,10 +181,185 @@ nav li {
     color: #ff0000;
 }
 
+/*NORMANN: Hamburger menu*/
+/* Skjul menuen som standard */
+.menu {
+    display: none;
+    display: none;
+    position: fixed;
+    top: 40px; /* Juster afstanden fra toppen */
+    right: 20px;
+    z-index: 999;
+    list-style: none; /* Fjern punktopstillingsmarkører */
+    padding: 0;
+  }
+/* Stil for hamburger-ikon */
+.hamburger {
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px; /* Placering til højre side */
+    z-index: 999;
+  }
+
+.menu li {
+    text-align: right; /* Juster tekst til højre */
+    margin-bottom: 10px; /* Tilføj lidt afstand mellem punkterne */
+  }
+
+/*JEPPE: Dropdown*/
+.header-container {
+    text-align: right;
+}
+
+.header-text {
+    color: black;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown {
+    display: inline-block;
+    margin: 10px;
+}
+
+.dropdown-container {
+    text-align: right;
+}
+
+.dropbtn {
+    background-color: #008559;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Orgon', sans-serif;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #008559;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: 'Orgon', sans-serif;
+    text-align: left;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+/* Tilføjelse af en klasse .green-background */
+.green-background {
+    background-color: #d7ead9;
+    padding: 10px;
+    display: inline-block;
+}
+
+/*BO: Diashow*/
+#diashow {
+    box-sizing: border-box;
+}
+
+.graf-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.graferne {
+  display: none;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.tilbage, .frem {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.frem {
+  right:0;
+  border-radius: 3px 0 0 3 px;
+}
+
+.tilbage:hover, .frem:hover {
+  background-color: rgba(0,133,89,0.8);
+}
+
+.tekst {
+  color: #070707;
+  font-size: 15px;
+  padding: 8px 12px;
+  position:relative;
+  display: block;
+  bottom: 2px;
+  width:100%;
+  text-align:center;
+  margin-top: 2px;
+}
+
+.prik {
+  cursor: pointer;
+  height: 2vw;
+  max-height: 15px;
+  width: 2vw;
+  max-width: 15px;
+  margin: 0 1vw;
+  background-color: #bbb;
+  border-color: #008559;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+.prik:active, .prik:hover {
+  background-color: #008559;
+}
+
+.active {
+  background-color: #008559;
+}
 
 @media screen and (min-width: 400px) {
     
-   .burger {
-    display: none;
-   }
+
 }
+
+
