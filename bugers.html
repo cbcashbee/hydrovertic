@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hamburger Menu</title>
+  <style>
+    /* Skjul menuen som standard */
+    .menu {
+      display: none;
+      display: none;
+      position: fixed;
+      top: 40px; /* Juster afstanden fra toppen */
+      right: 20px;
+      z-index: 999;
+      list-style: none; /* Fjern punktopstillingsmarkører */
+      padding: 0;
+    }
+    /* Stil for hamburger-ikon */
+    .hamburger {
+      cursor: pointer;
+      position: fixed;
+      top: 20px;
+      right: 20px; /* Placering til højre side */
+      z-index: 999;
+    }
+    .menu li {
+      text-align: right; /* Juster tekst til højre */
+      margin-bottom: 10px; /* Tilføj lidt afstand mellem punkterne */
+    }
+    
+  </style>
+</head>
+<body>
+
+<!-- Hamburger-ikon -->
+<div class="hamburger" onclick="toggleMenu()">☰</div>
+
+<!-- Menuen -->
+<ul class="menu" id="menuItems"></ul>
+
+<script>
+  // Funktion til at skifte menuens synlighed
+  function toggleMenu() {
+    console.log("Funktionen toggleMenu blev kaldt");
+    var menu = document.querySelector('.menu');
+    menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+  }
+
+
+    // Et array af menu punkter og tilhørende URL'er
+    var menuItems = [
+    { text: "Dashboard", url: "dashboard.html" },
+    { text: "Datalogging", url: "datalogging.html" },
+    { text: "Indstillinger", url: "indstillinger.html" },
+    { text: "Kontakt", url: "kontakt.html" }
+  ];
+
+  // Loop gennem array for at tilføje punkter til menuen
+  var menuList = document.querySelector('.menu');
+  for (var i = 0; i < menuItems.length; i++) {
+    var menuItem = document.createElement('li');
+    var link = document.createElement('a');
+    link.href = menuItems[i].url; // Indsæt url fra objektet
+    link.textContent = menuItems[i].text;
+    menuItem.appendChild(link);
+    menuList.appendChild(menuItem);
+  }
+</script>
+
+</body>
+</html>
