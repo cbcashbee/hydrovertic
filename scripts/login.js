@@ -4,8 +4,8 @@ const users = [
 ];
 
 function loginFunktion() {
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
+    const username = document.getElementById("bruger").value;
+    const password = document.getElementById("adgang").value;
 
     let isAuthenticated = false;
     for (const user of users) {
