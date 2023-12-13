@@ -471,8 +471,9 @@ menu {
     }
 
     .hub-btn:hover{
-        background-color: #FFF;
+        background: #FFF;
         color: #000;
+        border: none;
     }
 }
 
