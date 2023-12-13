@@ -4,12 +4,14 @@
     padding: 0;
 }
 
-/*TYPOGRAFI*/
 @font-face {
     font-family: OrgonMedium;
     src: url(../fonts/Orgon-Medium.otf);
 }
 
+button {
+    cursor: pointer;
+}
 
 /*NAVIGATION*/
 header {
@@ -468,6 +470,15 @@ menu {
         border-radius: 30px;
     }
 
+    .hub-btn:hover{
+        background: #FFF;
+        color: #000;
+    }
+
+
+    #login {
+        display: none;
+    }
 }
 
 
