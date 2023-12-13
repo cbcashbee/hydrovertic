@@ -11,43 +11,54 @@
     src: url(../fonts/Orgon-Medium.otf);
 }
 
-li {
-    list-style: none;
-}
-
 
 /*NAVIGATION*/
 header {
-    background: #008559;
     width: 100vw;
-    height: 57px;
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-between;
+    height: 77px;
 }
 
 nav {
     display: flex;
-    flex-grow: 2;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    background: #008559;
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    height: 57px;
 }
 
-#logo-nav {
+#nav-link {
+    width: 57px;
+    height: 57px;
+}
+
+#skygge {
+    position: absolute;
+    width: 57px;
+    height: 57px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px inset;
+}
+
+#nav-logo {
     width: 137px;
     height: 35px;
 }
 
-.ikon {
-    width: 35px;
-    height: 35px;
+#nav-noti {
+    width: 28px;
+    height: 32px;
+}
+
+.nav-img {
+    padding: 25px;
 }
 
 
 /*SIDER*/
 /*Hub*/
 .hub-header {
+    background: #008559;
     width: 100vw;
     height: 120px;
     display: flex;
@@ -55,7 +66,7 @@ nav {
     align-items: center;
 }
 
-#logo-hub {
+#hub-logo {
     width: 235px;
     height: 73px;
 }
@@ -86,6 +97,36 @@ nav {
 }
 
 /*Dashboard*/
+.under-graf {
+    width: 390px;
+    height: 298px;
+    text-align: center;
+}
+
+.under-graf div {
+    margin: 25px 0;
+}
+
+.under-graf button {
+    background: #008559;
+    border: 1px #FFF solid;
+    margin: 10px;
+    font-family: OrgonMedium;
+    font-size: 25px;
+    color: #FFF;
+}
+
+.ug-graf button {
+    width: 154px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.ug-vaerdi button {
+    width: 262px;
+    height: 58px;
+    border-radius: 15px;
+}
 
 
 /*JAVASCRIPT*/
@@ -307,8 +348,8 @@ menu {
 }
 
 .frem {
-  right:0;
-  border-radius: 3px 0 0 3 px;
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
 .tilbage:hover, .frem:hover {
@@ -350,8 +391,8 @@ menu {
   background-color: #008559;
 }
 
-@media screen and (min-width: 400px) {
-    
+@media screen and (min-width: 391px) {
+
 
 }
 
