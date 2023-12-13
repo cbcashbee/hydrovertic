@@ -39,17 +39,6 @@ nav {
     height: 35px;
 }
 
-nav li {
-    display: none;
-}
-
-.burger div {
-    background: #FFF;
-    width: 30px;
-    height: 3px;
-    margin: 10px 0;
-}
-
 .ikon {
     width: 35px;
     height: 35px;
@@ -183,28 +172,33 @@ nav li {
 
 /*NORMANN: Hamburger menu*/
 /* Skjul menuen som standard */
-.menu {
-    display: none;
+menu {
     display: none;
     position: fixed;
-    top: 40px; /* Juster afstanden fra toppen */
-    right: 20px;
-    z-index: 999;
-    list-style: none; /* Fjern punktopstillingsmarkører */
-    padding: 0;
+
   }
-/* Stil for hamburger-ikon */
+  /* Class to display the menu */
+.show-menu {
+    display: block;
+    position: fixed;
+    font-family: OrgonMedium;
+    top: 50px; /* Juster afstanden fra toppen */
+    right: 20px;
+    list-style: none; /* Fjern punktopstillingsmarkører */
+    padding: 60px; /* Add padding to the menu */
+    background-color: #008559; /* Set the background color */
+    border-radius: 2mm; /* Optional: Add rounded corners to the menu */
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
 .hamburger {
     cursor: pointer;
     position: fixed;
-    top: 20px;
+    top: 3px;
     right: 20px; /* Placering til højre side */
     z-index: 999;
-  }
-
-.menu li {
-    text-align: right; /* Juster tekst til højre */
-    margin-bottom: 10px; /* Tilføj lidt afstand mellem punkterne */
+    font-size: 40px;
+    color: #ffffff;
   }
 
 /*JEPPE: Dropdown*/
