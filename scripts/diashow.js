@@ -1,26 +1,13 @@
 let slideIndex = 2;
 
-let grafkilder = [
-  "../images/grafbar.png",
-  "../images/graflinje.png",
-  "../images/grafomrade.png"
-];
-
-// Simpelt array med billedkilder, kan udvides efter behov
-console.log(grafkilder)
-
 showSlides(slideIndex);
 
-// frem/tilbage knapperne
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-//Billedekontrol
+// Angiv og vis det aktuelle slide
 function currentSlide(n) {
   showSlides(slideIndex = n)
 }
 
+// Styring af slideshow og prikker
 function showSlides(n) {
   let i;
   let graferne = document.getElementsByClassName("graferne");
@@ -37,7 +24,12 @@ function showSlides(n) {
   prikker[slideIndex-1].className += " active";
 }
 
-// Hent alle elementer med klassen "tilbage" og tilføj en eventlytter til hvert af dem
+// frem/tilbage knapperne
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Hent elementer med klassen "tilbage" og tilføj et event til dem
 let tilbageknap = document.getElementsByClassName("tilbage");
 for (let i = 0; i < tilbageknap.length; i++) {
   tilbageknap[i].addEventListener("click", function() {
@@ -45,10 +37,17 @@ for (let i = 0; i < tilbageknap.length; i++) {
   });
 }
 
-// Hent alle elementer med klassen "frem" og tilføj en eventlytter til hvert af dem
+// Hent elementer med klassen "frem" og tilføj et event til dem
 let fremknap = document.getElementsByClassName("frem");
 for (let i = 0; i < fremknap.length; i++) {
   fremknap[i].addEventListener("click", function() {
     plusSlides(1);
   });
 }
+
+// Array med grafbilledkilder
+let grafkilder = [
+  "../images/grafbar.webp", "../images/graflinje.webp", "../images/grafomrade.webp"
+];
+
+console.log(grafkilder)
