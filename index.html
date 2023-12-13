@@ -17,24 +17,32 @@
         <img id="nav-noti" src="images/ikon-noti.png" alt="notification icon">
     </header>
 
-    <section class="hub">
+    <div id="noti-sort">
+        <img src="images/noti-sort.png" alt="">
+    </div>
+
+    <div class="hub">
         <a href="pages/dashboard.html">
             <button class="hub-btn">Dashboard</button>
         </a>
-        <button class="hub-btn">Datalogger</button>
-        <button class="hub-btn">Indstillinger</button>
-        <button class="hub-btn">Kontakt os</button>
-    </section>
+        <a>
+            <button class="hub-btn">Datalogger</button>
+        </a>
+        <a>
+            <button class="hub-btn">Indstillinger</button>
+        </a>
+        <a>
+            <button class="hub-btn">Kontakt os</button>
+        </a>
+    </div>
 
     <!--CASHBEE: Login-->
-    <section id="login">
+    <div id="login">
         <img id="login-logo" src="images/logo-groen.png">
         <div class="login-container">
             <form>
-                <div>
-                    <input type="text" placeholder="Brugernavn" id="bruger" name="username" required>
-                    <input type="password" placeholder="Adgangskode" id="adgang" name="password" required>
-                </div>
+                <input type="text" placeholder="Brugernavn" id="bruger" name="username" required>
+                <input type="password" placeholder="Adgangskode" id="adgang" name="password" required>
                 <p>Glemt adgangskode?</p>
                 <p>Opret profil</p>
                 <button type="button" onclick="loginFunktion()">Log på</button>        
@@ -43,7 +51,7 @@
         <div id="fejlbesked">
             <p>Forkert brugernavn eller adgangskode</p>
         </div>
-    </section>
+    </div>
     
 </body>
 </html>

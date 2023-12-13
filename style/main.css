@@ -4,7 +4,6 @@
     padding: 0;
 }
 
-
 /*TYPOGRAFI*/
 @font-face {
     font-family: OrgonMedium;
@@ -69,6 +68,10 @@ nav {
 #hub-logo {
     width: 235px;
     height: 73px;
+}
+
+#noti-sort {
+    display: none;
 }
 
 .hub {
@@ -136,9 +139,8 @@ nav {
     position: absolute;
     z-index: 1;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,15 +162,17 @@ nav {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.login-container div {
+.login-container form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .login-container input {
-    width: 285px;
-    height: 57px;
-    margin-top: 50px;
+    width: 275px;
+    height: 54px;
+    margin: 30px;
     border: 3px solid #008559;
 }
 
@@ -182,15 +186,14 @@ nav {
     font-family: OrgonMedium;
     font-size: 20px;
     color: #707070;
-    padding-top: 20px;
-    text-align: center;
+    padding: 10px;
 }
 
 .login-container button {
     background: #008559;
     width: 191px;
     height: 72px;
-    margin: 50px;
+    margin: 25px 0;
     border: 4px #FFF solid;
     border-radius: 10px;
     font-family: OrgonMedium;
@@ -202,11 +205,11 @@ nav {
     display: none;
     position: absolute;
     z-index: 2;
-    top: 685px;
+    top: 770px;
     width: 200px;
     height: auto;
     font-family: OrgonMedium;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     color: #ff0000;
 }
@@ -393,6 +396,77 @@ menu {
 
 @media screen and (min-width: 391px) {
 
+    #login-logo {
+        width: 500px;
+        height: 141px;
+    }
+    
+    .login-container {
+        width: 402px;
+        height: 387px;
+    }
+
+    .login-container input {
+        width: 335px;
+        height: 57px;
+        margin: 20px;
+        padding: 0;
+    }
+
+    .login-container p {
+        margin: -15px 0 25px 0;
+        padding: 0;
+    }
+
+    .login-container button {
+        width: 242px;
+        height: 76px;
+        margin: 0px;
+        padding: 0;
+    }
+
+    #fejlbesked {
+        top: 680px;
+        font-size: 20px;
+    }
+
+    .hub-header {
+        width: 395px;
+        height: 120px;
+        margin: auto;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    
+    #hub-logo {
+        width: 303px;
+        height: 90px;
+    }
+
+    #nav-noti {
+        display: none;
+    }
+
+    #noti-sort {
+        display: block;
+        float: right;
+        padding: 35px 50px;
+        margin-top: -120px;
+    }
+
+    .hub {
+        width: 930px;
+        height: 539px;
+        margin: 50px auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .hub-btn {
+        width: 369px;
+        height: 220px;
+        margin: 0 45px;
+        border-radius: 30px;
+    }
 
 }
 
