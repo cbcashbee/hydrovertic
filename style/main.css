@@ -201,25 +201,35 @@ menu {
     color: #ffffff;
   }
 
+
 /*JEPPE: Dropdown*/
-.header-container {
+.right-container {
     text-align: right;
+}
+
+.header-container {
+    overflow: auto;
 }
 
 .header-text {
     color: black;
-    font-size: 24px;
+    font-size: 18px;
     margin: 0;
-    padding: 0;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green-background {
+    background-color: #d7ead9;
+    padding: 10px;
+    display: inline-block;
 }
 
 .dropdown {
     display: inline-block;
-    margin: 10px;
-}
-
-.dropdown-container {
-    text-align: right;
+    margin: 0 10px;
 }
 
 .dropbtn {
@@ -234,11 +244,6 @@ menu {
 
 .dropbtn:hover, .dropbtn:focus {
     background-color: #008559;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
 }
 
 .dropdown-content {
@@ -268,12 +273,6 @@ menu {
     display: block;
 }
 
-/* Tilføjelse af en klasse .green-background */
-.green-background {
-    background-color: #d7ead9;
-    padding: 10px;
-    display: inline-block;
-}
 
 /*BO: Diashow*/
 #diashow {

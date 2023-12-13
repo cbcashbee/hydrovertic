@@ -36,33 +36,37 @@
 
     <!--JEPPE: Dropdowns-->
     <section id="dropdown">
-        <div class="header-container green-background">
-            <div class="header-text">Temp.: 4°C</div>
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Værdier</button>
-                <div id="myDropdown1" class="dropdown-content">
-                    <a href="#temp">Temperatur</a>
-                    <a href="#fugt">Fugtighed</a>
-                    <a href="#ph">Ph-værdi</a>
+        <div class="right-container">
+            <div class="header-container green-background">
+                <div class="header-text">Temp.: 4°C</div>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Værdier</button>
+                    <div id="myDropdown1" class="dropdown-content">
+                        <a href="#temp">Temperatur</a>
+                        <a href="#fugt">Fugtighed</a>
+                        <a href="#ph">Ph-værdi</a>
+                    </div>
                 </div>
             </div>
         </div>
     
-        <div class="dropdown left">
-            <button onclick="myOtherFunction()" class="dropbtn">Stativ</button>
-            <div id="myDropdown2" class="dropdown-content">
-                <a href="#1">1</a>
-                <a href="#2">2</a>
-                <a href="#3">3</a>
+        <div class="left-container">
+            <div class="dropdown ny">
+                <button onclick="myThirdFunction()" class="dropbtn">Ny knap</button>
+                <div id="myDropdown3" class="dropdown-content">
+                    <a href="#a">A</a>
+                    <a href="#b">B</a>
+                    <a href="#c">C</a>
+                </div>
             </div>
-        </div>
     
-        <div class="dropdown left">
-            <button onclick="myThirdFunction()" class="dropbtn">Ny knap</button>
-            <div id="myDropdown3" class="dropdown-content">
-                <a href="#a">A</a>
-                <a href="#b">B</a>
-                <a href="#c">C</a>
+            <div class="dropdown stativ">
+                <button onclick="myOtherFunction()" class="dropbtn">Stativ</button>
+                <div id="myDropdown2" class="dropdown-content">
+                    <a href="#1">1</a>
+                    <a href="#2">2</a>
+                    <a href="#3">3</a>
+                </div>
             </div>
         </div>
     </section>
