@@ -493,7 +493,7 @@ nav {
         height: 57px;
     }
 
-    .nav-tab li {
+    .nav-tab li, .nav-tab li a {
         font-family: OrgonMedium, sans-serif;
         font-size: 30px;
         list-style: none;
