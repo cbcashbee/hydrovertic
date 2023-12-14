@@ -4,7 +4,7 @@
 
 #### Kære censor og undervisere,
 
-For at sikre I har adgang til vores index-fil, er der her i README-filen nedskrevet brugernavne og adgangskoder, som værendnde en ekstra sikkerhedsforanstaltning. 
+For at sikre I har adgang til vores index-fil, er der her i README-filen nedskrevet brugernavne og adgangskoder, som en ekstra sikkerhedsforanstaltning. 
 
 ###### BRUGER 1
 - Brugernavn: Iris
