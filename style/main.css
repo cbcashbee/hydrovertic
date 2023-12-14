@@ -237,6 +237,11 @@ menu {
     box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
+/*Teksten i hamburger*/
+.show-menu li a {
+    color: #FFF;
+}
+
 .hamburger {
     cursor: pointer;
     position: fixed;
@@ -397,7 +402,11 @@ menu {
 }
 
 @media screen and (min-width: 391px) {
-
+    
+    .nav-tab {
+        display: none;
+    }
+    
     #login-logo {
         width: 500px;
         height: 141px;
