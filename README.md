@@ -1,6 +1,5 @@
 # P5: EKSAMENSPROJEKTET
-##### Efteråret 2023 – MMOF23
-###### Klient: Hydrovertic
+## Efteråret 2023 – MMOF23 – Team 16 – HydroverticSystems
 
 
 #### Kære censor og undervisere,
